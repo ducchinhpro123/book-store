@@ -54,9 +54,9 @@ export default function ShopCategory() {
               <div className="col-sm-5 col-lg-8 col-xl-6 d-xl-flex justify-content-xl-center align-items-xl-center">
                 <img
                     className="img-fluid"
-                    src="/assets/img/—Pngtree—creative%20electronic%20paper%20book_622858.png"
+                    src="/assets/img/e-books.png"
                     style={{
-                      transform: "rotate(10deg) scale(1.63)",
+                      transform: "rotate(10deg)",
                       maxWidth: "100%",
                       height: "auto",
                     }}
