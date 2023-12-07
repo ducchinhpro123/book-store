@@ -27,7 +27,7 @@ export const blogJson = [
   },
   {
     title: "Top 10 E-books to read",
-    book: `$rocess.env.PUBLIC_URL}/assets/img/ada9a09acea936d776a6f55c82778c43_XL.jpg`,
+    book: `${process.env.PUBLIC_URL}/assets/img/ada9a09acea936d776a6f55c82778c43_XL.jpg`,
     summary_content: "This months hottest digital reads showcase the diverse" +
         "                  interests of" +
         "                  modern readers. Topping the charts is the poignant literary" +
