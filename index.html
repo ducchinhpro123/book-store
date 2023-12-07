@@ -14,19 +14,58 @@
   />
   <link
           rel="stylesheet"
+          href="/book-store/css/bootstrap.min.css"
+  />
+  <link
+          rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap"
   />
   <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700"
   />
+  <link rel="stylesheet" href="/book-store/fonts/font-awesome.min.css"/>
+  <link rel="stylesheet" href="/book-store/fonts/simple-line-icons.min.css"/>
+  <link
+          rel="stylesheet"
+          href="/book-store/css/-Filterable-Cards--Filterable-Cards.css"
+  />
+  <link rel="stylesheet" href="/book-store/css/Article-Cards.css"/>
+  <link rel="stylesheet" href="/book-store/css/Articles-Cards-images.css"/>
+  <link
+          rel="stylesheet"
+          href="/book-store/css/Bold-BS4-CSS-Image-Slider.css"
+  />
+  <link
+          rel="stylesheet"
+          href="/book-store/css/Button-Change-Text-on-Hover.css"
+  />
+  <link rel="stylesheet" href="/book-store/css/Gamanet_Pagination_bs5.css"/>
+  <link rel="stylesheet" href="/book-store/css/News-Cards.css"/>
+  <link rel="stylesheet" href="/book-store/css/Quote-Card-quote-card.css"/>
+  <link rel="stylesheet" href="/book-store/css/Quote-Card.css"/>
   <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
   />
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link
+          rel="stylesheet"
+          href="/book-store/css/Bold-BS4-Animated-Back-To-Top.css"
+  />
+  <link rel="stylesheet" href="/book-store/css/Product-Viewer-1-untitled.css"/>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    (function(){
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    })();
+  </script>
 
   <!-- <script
     src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -34,8 +73,8 @@
     crossorigin="anonymous"
   ></script> -->
   <!--    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">-->
-  <script type="module" crossorigin src="/book-store/assets/index-kCKebr8u.js"></script>
-  <link rel="stylesheet" crossorigin href="/book-store/assets/index-bkEHMPtA.css">
+  <script type="module" crossorigin src="/book-store/assets/index-KxbNvkbx.js"></script>
+  <link rel="stylesheet" crossorigin href="/book-store/assets/index-6oSbYpdY.css">
 </head>
 <body>
 <div id="root"></div>
@@ -45,6 +84,8 @@
         href="#0"
 >Top ></a
 >
+<script src="/book-store/js/Product-Viewer-1-3.1.1-jquery.min.js"></script>
+<script src="/book-store/js/Product-Viewer-1-3.1.1-jquery.min.js"></script>
 <script
         src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -57,8 +98,8 @@
 ></script>
 <!-- <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> -->
 
-<script src="./src/assets/bootstrap/js/bootstrap.min.js"></script>
-<script src="./src/assets/js/-Filterable-Cards--Filterable-Cards.js"></script>
-<script src="./src/assets/js/Bold-BS4-Animated-Back-To-Top-backtotop.js"></script>
+<script src="/book-store/js/bootstrap.min.js"></script>
+<script src="/book-store/js/-Filterable-Cards--Filterable-Cards.js"></script>
+<script src="/book-store/js/Product-Viewer-1-untitled.js"></script>
 </body>
 </html>
