@@ -5,14 +5,13 @@ import {useState} from "react";
 import {UserContext} from "./components/User/UserContext.jsx";
 
 
-// k dc roi, ten sai => Quoc Dat co khoang cach, nguyen tac dat ten cho du an la k co khoang cach trong duong dan
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null)
   return (
       <div>
         <UserContext.Provider value={{currentUser, setCurrentUser}}>
-          <Router>
+          <Router basename={process.env.NODE_ENV === 'production' ? '/book-store' : '/'}>
             <Routes>
               {publicRoutes.map((route, index) => {
                 const Page = route.component;

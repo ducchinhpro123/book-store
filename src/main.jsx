@@ -21,7 +21,6 @@ import Register from "./components/Form/Register.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
     <React.StrictMode>
-
       <CartProvider>
         <CardProductProvider>
           <App/>
