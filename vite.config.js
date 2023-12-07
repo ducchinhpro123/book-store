@@ -11,7 +11,10 @@ import react from '@vitejs/plugin-react'
 export default defineConfig(({command}) => {
   const config = {
     plugins: [react()],
-    base: "/"
+    base: "/",
+    define: {
+      'process.env.PUBILC_URL': command === 'serve' ? '""' : '"/book-store"',
+    }
   }
 
   if (command !== 'serve') {
