@@ -2,7 +2,7 @@ export const AboutUsJson = [
   {
     name: "Vo Duc Chinh",
     avatar: "https://img.freepik.com/premium-vector/businessman-avatar-cartoon-character-profile_18591-50588.jpg?w=740",
-    aboutMe: "Vo Duc Chinh is our manager. With over 20 years in the book industry, she brings tremendous knowledge and an infectious enthusiasm for stories."
+    aboutMe: "Vo Duc Chinh is our manager. With over 20 years in the book industry, he brings tremendous knowledge and an infectious enthusiasm for stories."
   },
 
   {
