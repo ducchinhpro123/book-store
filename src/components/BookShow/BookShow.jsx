@@ -20,14 +20,14 @@ export default function BookShow({book, addToCart, setProduct}) {
              setProduct(book);
            }}>
           <img
-              className="object-cover w-full"
+              className="object-cover mx-auto"
               src={book.image}
               alt={book.title}
           />
         </Link>
 
         <div className="p-6">
-          <h5 style={{fontSize: '14px'}}
+          <h5 style={{fontSize: '17px'}}
               className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
             {book.title}
           </h5>

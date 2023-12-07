@@ -7,7 +7,7 @@ async function searchBooks(term, page) {
         `https://api.itbook.store/1.0/search/${term}/${page}`
       );
       resolve(response.data);
-    }, 500);
+    }, 200);
   });
 }
 

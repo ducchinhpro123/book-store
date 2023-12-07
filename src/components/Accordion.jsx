@@ -2,6 +2,7 @@
 import brick_png from "/assets/img/bg_brick.jpg";
 import { slides } from "../json/Slide";
 
+
 export default function Accordion() {
   return (
     <div
@@ -12,7 +13,7 @@ export default function Accordion() {
         paddingRight: 26,
       }}
     >
-      <div className="col-xl-3 d-xl-flex flex-column justify-content-xl-center">
+      <div className="col-xl-3 d-xl-flex flex-column justify-content-xl-center ">
         <h2 style={{ fontSize:'24px', color: "#091579", fontWeight: "bold" }}>
           CHOOSE YOUR BRAIN FOOD
         </h2>
