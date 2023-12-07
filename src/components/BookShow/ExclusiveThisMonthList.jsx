@@ -3,6 +3,7 @@ import ExclusiveThisMonthShow from "./ExclusiveThisMonthShow.jsx";
 import {useContext} from "react";
 import {CartContext} from "../Cart/CartContext.jsx";
 import {CardProductContext} from "../Cart/CardProductProvider.jsx";
+
 export default function ExclusiveThisMonthList() {
   const { addToCart } = useContext(CartContext);
   const { setProduct } = useContext(CardProductContext);

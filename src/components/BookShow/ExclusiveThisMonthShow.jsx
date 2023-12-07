@@ -1,5 +1,4 @@
 import {useState} from "react";
-import {Link} from "react-router-dom";
 import config from "../../config/index.js";
 
 export default function ExclusiveThisMonthShow({exclusiveBook, addToCart, detail}) {

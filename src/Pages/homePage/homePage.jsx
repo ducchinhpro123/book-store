@@ -82,8 +82,7 @@ export default function Body() {
                     borderRightStyle: "double",
                     borderRightColor: "var(--bs-emphasis-color)",
 
-                  }}
-              >
+                  }}>
                 <div className="row">
                   <div className="col-sm-2 col-xl-3 d-xl-flex justify-content-xl-center align-items-xl-center">
                     <svg
