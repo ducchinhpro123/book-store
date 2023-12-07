@@ -15,7 +15,7 @@ export const blogJson = [
   },
   {
     title: "Most recommended Books",
-    book: `${rocess.env.PUBLIC_URL}/assets/img/94d43e327d9303539cb1e2aac7032668_XL.jpg`,
+    book: `${process.env.PUBLIC_URL}/assets/img/94d43e327d9303539cb1e2aac7032668_XL.jpg`,
     summary_content: " As we bid farewell to March, a clear picture has emerged of" +
         "                  the books" +
         "                  that caught the imagination of readers this month thanks to" +
