@@ -14,49 +14,51 @@ export default function BookShow({book, addToCart, setProduct}) {
   // console.log(book)
 
   return (
-      <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-5 ">
-        <Link to={`${config.routes.learnmore}/${book.isbn13}`}
-           onClick={() => {
-             setProduct(book);
-           }}>
-          <img
-              className="object-cover mx-auto"
-              src={book.image}
-              alt={book.title}
-          />
-        </Link>
+    <div className=" relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-11">
+    <div className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+    <Link to={`${config.routes.learnmore}/${book.isbn13}`}
+       onClick={() => {
+         setProduct(book);
+       }}>
+      <img
+        className="mx-auto relative mx-4 -mt-3"
+        style={{ width: "135px", height: "184px" }}
+        src={book.image}
+        alt=""
+      />
+    </Link>
+      
+    </div>
+    <div className="p-6">
+      <p className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased book-title">
+        {book.title}
+      </p>
+      <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased book-subtitle">
+        {book.subtitle}
+      </p>  
+    </div>
+    <div className=" ml-6 text-lg font-semibold text-slate-500">
+      {book.price}
+    </div>
+    <div className="p-6 pt-0">
+      <button
+        onClick={() => {
+          addToCart(book);
+          handleIsAddCart();
+        }}
+        data-ripple-light="true"
+        type="button"
+        className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+      >
+        {isAddToCart ? (
+          <i className="bi bi-cart-check-fill"></i>
+        ) : (
+          "Add to cart"
+        )}
+      </button>
+    </div>
+  </div>
 
-        <div className="p-6">
-          <h5 style={{fontSize: '17px'}}
-              className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
-            {book.title}
-          </h5>
-          <p style={{fontSize: '14px'}}
-             className="block font-sans text-base font-light leading-relaxed text-inherit antialiased">
-            {book.subtitle}
-          </p>
-        </div>
-        <div className="text-lg font-semibold ml-6 ">
-          {book.price}
-        </div>
-        <div className="p-6 pt-0">
-          <button onClick={() => {
-            addToCart(book);
-            handleIsAddCart();
-          }}
-                  disabled={isAddToCart}
-                  data-ripple-light="true"
-                  type="button"
-                  className="select-none rounded-lg bg-blue-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white shadow-md shadow-blue-500/20 transition-all hover:shadow-lg hover:shadow-blue-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-          >
-            {isAddToCart ? (
-                <i className="bi bi-cart-check-fill"></i>
-            ) : (
-                "Add to cart"
-            )}
-          </button>
-        </div>
-      </div>
 
   );
 }

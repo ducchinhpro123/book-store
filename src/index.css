@@ -229,3 +229,20 @@ nav ul li a {
 .item-list:hover:after {
   width: 100%;
 }
+.book-title {
+  font-size: 24px;
+  font-weight: 600;
+  height: 60px; /* Fixed height for the title */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.book-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  height: 20px; /* Fixed height for the subtitle */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
