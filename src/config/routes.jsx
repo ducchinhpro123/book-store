@@ -1,7 +1,7 @@
 import {baseUrl} from "./baseUrl.jsx";
 
 export const routes = {
-  homePage: `${baseUrl}/`,
+  homePage: '/',
   cart: `${baseUrl}/cart`,
   learnmore: `${baseUrl}/learnmore`,
   register: `${baseUrl}/register`,
