@@ -61,7 +61,7 @@ export default function Register() {
             <label htmlFor="password" className="form-label">Confirm your password</label>
             <input value={confirmPassword} type="password" name={'confirmPassword'}
                    onChange={handleConfirmPasswordChange}
-                   className="form-control" id="password"/>
+                   className="form-control" id="confirmPassword"/>
           </div>
           <button type={'submit'} style={{color: '#091579'}} className="btn btn-primary">Register</button>
           {isRegistered && <Button/>}
