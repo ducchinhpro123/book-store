@@ -25,13 +25,13 @@ export default function FeatureBooks() {
           <div />
           <p
             className="d-xl-flex justify-content-xl-center"
-            style={{ fontWeight: "bold", fontSize: 30 }}
+            style={{ fontWeight: "bold", fontSize: 30, textAlign: 'center' }}
           >
             Our New Books
           </p>
         </div>
       </div>
-      <div className="row row-cols-1 d-xl-flex justify-content-xl-center">
+      <div className="">
         <FeatureBooksRender newBooks={newBooks} />
         {/* </div> */}
       </div>

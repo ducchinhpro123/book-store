@@ -15,16 +15,14 @@ export default function ExclusiveThisMonthShow({exclusiveBook, addToCart, detail
   }
 
   return (
-      <div className="flex font-sans mt-3">
-        <div className="flex-none w-48 relative">
-          <img
-              className="absolute inset-0 w-full h-full object-cover"
+      <div className="d-flex flex-column flex-sm-row justify-content-center mt-3">
+        <div className="col-lg-2 col-md-4 col-sm-5 mx-sm-auto mx-lg-0">
+          <img className=""
               loading="lazy"
               src={exclusiveBook.image}
-              alt={exclusiveBook.title}
-          />
+              alt={exclusiveBook.title}/>
         </div>
-        <form className="flex-auto p-6">
+        <div className="col-lg-8 p-6">
           <div className="flex flex-wrap">
             <h1 className="flex-auto text-2xl font-semibold text-slate-900">
               {exclusiveBook.title}
@@ -81,7 +79,7 @@ export default function ExclusiveThisMonthShow({exclusiveBook, addToCart, detail
           <p className="text-sm text-slate-700">
             Free shipping on all continental US orders.
           </p>
-        </form>
+        </div>
       </div>
   )
 }

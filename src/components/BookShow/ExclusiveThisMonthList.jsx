@@ -11,8 +11,11 @@ export default function ExclusiveThisMonthList() {
   return (
     <>
       {exclusiveBooks.map((exclusiveBook) => (
-            <ExclusiveThisMonthShow key={exclusiveBook.isbn13} addToCart={addToCart} detail={setProduct}
+          <div key={exclusiveBook.isbn13}>
+            <ExclusiveThisMonthShow addToCart={addToCart} detail={setProduct}
                                     exclusiveBook={exclusiveBook}/>
+          </div>
+
       ))}
     </>
   );

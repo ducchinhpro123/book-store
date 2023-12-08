@@ -179,7 +179,7 @@ export default function Body() {
                   Text books
                 </button>
               </div>
-              <div className="row filtr-container " style={{padding: '0 100px 0 100px'}}>
+              <div className="row filtr-container d-flex justify-content-center">
                 <InterestingBooks field={field}/>
               </div>
             </div>
@@ -207,13 +207,16 @@ export default function Body() {
 
                 </div>
               </div>
-              <div className="row filtr-container " style={{margin: '0 160px 0 160px'}}>
+              <div className="row filtr-container">
                 <h1
                     // className="justify-content-xl-center align-items-xl-center text-center mb-4 "
                     style={{
                       fontSize: 24,
                       paddingBottom: 0,
                       paddingTop: 23,
+                      fontWeight: "bold",
+                      textAlign: "center",
+                      marginBottom:"50px"
                     }}
                 >
                   EXCLUSIVE THIS MONTH

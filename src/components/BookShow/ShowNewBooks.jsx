@@ -20,16 +20,16 @@ export default function ShowNewBook({newBook, addToCart}) {
   }
 
   return (
-      <div className="flex font-sans bg-white rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
-        <div className="flex-none w-56 relative">
+      <div className="mt-2 d-flex flex-sm-row flex-md-row font-sans bg-white rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
+        <div className="col-5 col-sm-4 mx-auto col-md-5">
           <img
               src={newBook.image}
               alt={newBook.title}
-              className="absolute inset-0 w-full h-full object-cover rounded-lg"
+              className=""
               loading="lazy"
           />
         </div>
-        <form className="flex-auto p-6">
+        <div className="pt-2 col-sm-8 mx-sm-auto col-md-7">
           <div className="flex flex-wrap">
             <h1 className="flex-auto text-lg font-semibold text-slate-900">
               {newBook.title}
@@ -42,8 +42,8 @@ export default function ShowNewBook({newBook, addToCart}) {
             </div>
           </div>
           <div className="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200"></div>
-          <div className="flex space-x-4 mb-5 text-sm font-medium">
-            <div className="flex-auto flex space-x-4">
+          <div className="d-flex mb-5 text-sm font-medium justify-content-around">
+            <div className="d-flex space-x-4">
               <a
                   className="h-10 px-2 font-semibold rounded-md text-white flex items-center justify-center"
                   style={{background: "#2969ED"}}
@@ -80,7 +80,7 @@ export default function ShowNewBook({newBook, addToCart}) {
               </svg>
             </button>
           </div>
-        </form>
+        </div>
       </div>
   );
 }

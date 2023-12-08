@@ -1,18 +1,16 @@
 import {blogJson} from "../json/BlogJson";
 
 export default function Blog() {
+
   return (
-      <div className="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3"
-           style={{padding: "0 100px 0 100px"}}>
+      <div className="row d-flex justify-content-evenly">
         {blogJson.map((blog, index) => (
-            <figure style={{width: '400px'}}
-                    key={index}
-                    className="rounded-xl bg-white bg-clip-border mx-auto text-gray-700 shadow-md relative ">
-              <div className="relative mx-4 -mt-20 h-50">
-                <img
-                    className="w-48 h-48 md:w-48 md:h-48 object-cover rounded-full mx-auto"
+            <figure  key={index}
+                    className="col-7 col-sm-6 col-md-5 col-lg-4 col-xl-3 mt-5 mt-lg-1 rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+              <div className="-mt-10">
+                <img className="w-48 h-48 rounded-full mx-auto"
                     src={blog.book}
-                    alt=""/>
+                    alt={blog.title}/>
               </div>
               <div className="pt-3 md:p-8 text-center md:text-left space-y-4">
                 <blockquote>
@@ -32,31 +30,3 @@ export default function Blog() {
       </div>
   );
 }
-// <div className="col" key={index}>
-//   <div className="card">
-//     <img
-//         className="card-img-top w-100 d-block fit-cover"
-//         style={{height: 200}}
-//         src={blog.book}
-//     />
-//     <div className="card-body p-4">
-//       <p className="text-primary card-text mb-0">Article</p>
-//       <h4 className="card-title">{blog.title}</h4>
-//       <p className="card-text">
-//         {blog.summary_content}
-//       </p>
-//       <div className="d-flex">
-//         <img
-//             className="rounded-circle flex-shrink-0 me-3 fit-cover"
-//             width={50}
-//             height={50}
-//             src={blog.avatar}
-//         />
-//         <div>
-//           <p className="fw-bold mb-0">{blog.author}</p>
-//           <p className="text-muted mb-0">{blog.from}</p>
-//         </div>
-//       </div>
-//     </div>
-//   </div>
-// </div>
