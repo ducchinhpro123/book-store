@@ -15,10 +15,10 @@ const FeatureBooksRender = ({newBooks}) => {
             padding: '0 120px 0 120px',
             fontSize: '14px'
           }}*/
-          className={'row'}
+          className={'row mx-5'}
       >
         {newBooks.map((newBook) => (
-            <div key={newBook.isbn13} className="col-12 col-md-9 col-lg-6 col-xl-4">
+            <div key={newBook.isbn13} className="col-12 col-md-10 col-lg-6 col-xl-4 mt-3">
               <ShowNewBook newBook={newBook} addToCart={addToCart}/>
             </div>
         ))}

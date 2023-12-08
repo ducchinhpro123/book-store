@@ -14,15 +14,15 @@ export default function ShowNewBook({newBook, addToCart}) {
     setClickHeart(!clickHeart)
   }
 
-  const currentColor = clickHeart ? 'currentColor' : ''
+  const currentColor = clickHeart ? 'red' : ''
 
   function handleIsAddCart() {
     setIsAddToCart(true);
   }
 
   return (
-      <div className="mt-2 d-flex flex-sm-row flex-md-row font-sans bg-white rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
-        <div className="col-5 col-sm-4 mx-auto col-md-5">
+      <div className="mt-2 d-flex flex-column flex-sm-row flex-md-row font-sans bg-white rounded-xl bg-white bg-clip-border text-gray-700 shadow-md ">
+        <div className="col-9 col-sm-5 mx-auto col-md-4">
           <img
               src={newBook.image}
               alt={newBook.title}
@@ -30,23 +30,22 @@ export default function ShowNewBook({newBook, addToCart}) {
               loading="lazy"
           />
         </div>
-        <div className="pt-2 col-sm-8 mx-sm-auto col-md-7">
-          <div className="flex flex-wrap">
-            <h1 className="flex-auto text-lg font-semibold text-slate-900">
+        <div className="col-11  col-sm-8 mx-sm-auto col-md-7">
+          <div className="d-flex flex-column justify-content-center">
+            <h1 className="flex-auto text-center text-xl-start text-md-start mt-2 text-lg font-semibold text-slate-900">
               {newBook.title}
             </h1>
             <div
-                className="w-full flex-none mt-2 order-1 text-lg font-semibold text-red-400 "
+                className="text-center flex-none mt-2 text-xl-start text-md-start order-1 text-lg font-semibold text-red-400 "
                 // style={{color: "#2969ED"}}
             >
               {newBook.price}
             </div>
           </div>
           <div className="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200"></div>
-          <div className="d-flex mb-5 text-sm font-medium justify-content-around">
-            <div className="d-flex space-x-4">
-              <a
-                  className="h-10 px-2 font-semibold rounded-md text-white flex items-center justify-center"
+          <div className="d-flex mb-5 text-sm font-medium justify-content-evenly">
+            <div className="d-flex">
+              <a className="h-10 px-2 mr-4 font-semibold rounded-md text-white flex items-center justify-center"
                   style={{background: "#2969ED"}}
                   type="submit"
                   href={`${baseUrl}${config.routes.learnmore}/${newBook.isbn13}`}
@@ -64,7 +63,7 @@ export default function ShowNewBook({newBook, addToCart}) {
                   type="button"
                   disabled={isAddToCart}  // disable the button when isAddToCart is true
               >
-                {isAddToCart ? (<i className="text-2xl bi bi-cart-check-fill"></i>) : (<i className="text-2xl bi bi-cart-plus"></i>)}
+                {isAddToCart ? (<i className="text-4xl text-success bi bi-cart-check-fill"></i>) : (<i className="text-2xl bi bi-cart-plus"></i>)}
               </button>
             </div>
             <button

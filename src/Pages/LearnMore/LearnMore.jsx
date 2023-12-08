@@ -13,7 +13,7 @@ function LearnMore() {
   // console.log(cardProduct);
 
   return (
-      <div style={{padding: '0 160px 0 160px'}}>
+      <div className={'col-10 mx-auto'}>
         <div className="noti" style={{transform: `translate(${notitran},0)`}}>
           <div className="toast__icon">
             <i className="bi bi-bag-check"></i>
@@ -34,7 +34,7 @@ function LearnMore() {
         <div className=" border border-2 mt-5 p-4 rounded bg-white">
           <div className="row">
             <div className="col">
-              <div className="row " style={{marginTop: "24px "}}>
+              <div className="row " >
                 <CardReview image={cardProduct.image}/>
               </div>
               <div
@@ -42,8 +42,7 @@ function LearnMore() {
                     marginTop: "20px",
                     display: "flex",
                     justifyContent: "center",
-                  }}
-              >
+                  }}>
                 <button
                     type="button"
                     className="btn  border-2"
@@ -54,8 +53,7 @@ function LearnMore() {
                       setTimeout(() => {
                         setnotitran("415px");
                       }, 3000);
-                    }}
-                >
+                    }}>
                   Thêm vào giỏ hàng
                 </button>
 
@@ -217,7 +215,7 @@ function LearnMore() {
                     <div className="col">
                       <p>
                       <span style={{color: "rgb(51, 51, 51)"}}>
-                        Đổi trả sản phẩm trong30ngày
+                        Đổi trả sản phẩm trong 30 ngày {" "}
                       </span>
                         <strong>
                         <span style={{color: "rgb(36, 137, 244)"}}>
@@ -232,13 +230,11 @@ function LearnMore() {
               <div className="row">
                 <div className="col d-flex">
                   <span style={{color: "rgb(85, 85, 85)", marginRight: "7px"}}>Số lượng: {" "}</span>
-                  <input
-                      style={{width: "100px"}}
+                  <input style={{width: "100px"}}
                       type="number"
                       className="form-control form-control-sm"
                       value={quantity}
-                      onChange={(e) => setQuantity(parseInt(e.target.value))}
-                  />
+                      onChange={(e) => setQuantity(parseInt(e.target.value))}/>
                 </div>
               </div>
             </div>
