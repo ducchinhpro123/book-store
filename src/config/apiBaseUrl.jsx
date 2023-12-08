@@ -1,0 +1,1 @@
+export const apiBaseUrl= process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://my-json-server.typicode.com/ducchinhpro123/book-store'
