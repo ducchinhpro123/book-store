@@ -54,7 +54,7 @@ export default function Pagination({onSubmit, totalElements, term}) {
                 className={`pagination-item ${isLoading ? "disabled" : ""}`}
                 onClick={onPrevClick} disabled={disabledPreviousPage}
             >
-              <img src="/assets/img/icon_arrow-left.svg" alt={"arrow left icon"}/>
+              <img src={`${process.env.PUBLIC_URL}/assets/img/icon_arrow-left.svg`} alt={"arrow left icon"}/>
               <span>Previous</span>
             </button>
 
@@ -63,7 +63,7 @@ export default function Pagination({onSubmit, totalElements, term}) {
                 onClick={onNextClick} disabled={disabledNextPage}
             >
               <span>Next</span>
-              <img src="/assets/img/icon_arrow-right.svg" alt={"arrow right icon"}/>
+              <img src={`${process.env.PUBLIC_URL}/assets/img/icon_arrow-right.svg`} alt={"arrow right icon"}/>
             </button>
           </div>
           <div className="col text-center">
