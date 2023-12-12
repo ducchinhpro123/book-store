@@ -49,7 +49,7 @@ export default function Accordion() {
                 <a  className="image_title" href="#">
                   {slide.title}
                 </a>
-                <a href="">
+                <a href=""> 
                   <img style={{height:'319px', width:'100%'}} src={slide.imageUrl} alt={slide.title} />
                 </a>
               </li>

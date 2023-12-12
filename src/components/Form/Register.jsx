@@ -4,7 +4,9 @@ import config from "../../config/index.js";
 import axios from "axios";
 import {apiBaseUrl} from "../../config/apiBaseUrl.jsx";
 
+
 export default function Register() {
+
   const [user, setUser] = useState({username: "", password: ""});
   const [isRegistered, setIsRegistered] = useState(false)
   const [confirmPassword, setConfirmPassword] = useState('')
@@ -69,3 +71,29 @@ export default function Register() {
       </div>
   )
 }
+
+
+/*
+* // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB86_cj7KrIuw1Hh8W6tikjxaduybH_auY",
+  authDomain: "book-store-20d4d.firebaseapp.com",
+  projectId: "book-store-20d4d",
+  storageBucket: "book-store-20d4d.appspot.com",
+  messagingSenderId: "181569103358",
+  appId: "1:181569103358:web:890896048dc67c71f98caf",
+  measurementId: "G-854PGMNN4Z"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+*
+* */

@@ -34,7 +34,7 @@ function LearnMore() {
         <div className=" border border-2 mt-5 p-4 rounded bg-white">
           <div className="row">
             <div className="col">
-              <div className="row " >
+              <div className="row ">
                 <CardReview image={cardProduct.image}/>
               </div>
               <div
@@ -231,10 +231,11 @@ function LearnMore() {
                 <div className="col d-flex">
                   <span style={{color: "rgb(85, 85, 85)", marginRight: "7px"}}>Số lượng: {" "}</span>
                   <input style={{width: "100px"}}
-                      type="number"
-                      className="form-control form-control-sm"
-                      value={quantity}
-                      onChange={(e) => setQuantity(parseInt(e.target.value))}/>
+                         min={1}
+                         type="number"
+                         className="form-control form-control-sm"
+                         value={quantity}
+                         onChange={(e) => setQuantity(parseInt(e.target.value))}/>
                 </div>
               </div>
             </div>

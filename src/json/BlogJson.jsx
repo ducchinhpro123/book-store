@@ -11,7 +11,6 @@ export const blogJson = [
     avatar: `${process.env.PUBLIC_URL}/assets/img/avatar_1.png`,
     author: "John Smith",
     from: "New York"
-
   },
   {
     title: "Most recommended Books",
@@ -38,5 +37,4 @@ export const blogJson = [
     author: "David",
     from: "California"
   },
-
 ]
