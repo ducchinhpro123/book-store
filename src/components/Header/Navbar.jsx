@@ -1,5 +1,6 @@
 import User from "../Form/User";
 import {Link} from 'react-scroll'
+import config from "../../config/index.js";
 
 export default function Navbar() {
   const userName = JSON.parse(localStorage.getItem("currentUser"))
@@ -9,7 +10,7 @@ export default function Navbar() {
         <div className="logo">BOOK STORE</div>
         <ul className="list">
           <li className="item-list active">
-            <a href="/">Home</a>
+            <a href={config.routes.homePage}>Home</a>
           </li>
           <li className="item-list">
             <Link style={{cursor: "pointer"}} to={"AboutUs"} smooth={true}>About Us</Link>

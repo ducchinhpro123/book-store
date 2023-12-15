@@ -50,9 +50,8 @@ export default function ShowInterestingBook({book}) {
           </div>
           <div className="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200"></div>
           <div className="flex space-x-4 mb-6 text-sm font-medium">
-            <div className="flex-auto flex space-x-4">
+            <div className="flex-auto flex space-x-1">
               <a
-
                   href={`${baseUrl}${config.routes.learnmore}/${book.isbn13}`}
                   onClick={() => {
                     setProduct(book);
