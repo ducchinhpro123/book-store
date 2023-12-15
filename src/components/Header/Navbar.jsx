@@ -1,5 +1,6 @@
 import User from "../Form/User";
 import {Link} from 'react-scroll'
+import {Link as RouterLink} from 'react-router-dom'
 import config from "../../config/index.js";
 
 export default function Navbar() {
@@ -10,7 +11,7 @@ export default function Navbar() {
         <div className="logo">BOOK STORE</div>
         <ul className="list">
           <li className="item-list active">
-            <a href={config.routes.homePage}>Home</a>
+            <RouterLink to={config.routes.homePage}>Home</RouterLink>
           </li>
           <li className="item-list">
             <Link style={{cursor: "pointer"}} to={"AboutUs"} smooth={true}>About Us</Link>
