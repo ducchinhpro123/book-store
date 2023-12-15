@@ -17,9 +17,7 @@
     transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
 }
 
-.cd-top.cd-top--show,
-.cd-top.cd-top--fade-out,
-.cd-top:hover {
+.cd-top.cd-top--show, .cd-top.cd-top--fade-out, .cd-top:hover {
     -webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
     transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
 }

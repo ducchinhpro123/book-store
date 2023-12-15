@@ -5,9 +5,10 @@ import {useState} from "react";
 import {UserContext} from "./components/User/UserContext.jsx";
 
 
-
 function App() {
+  // store user to use global
   const [currentUser, setCurrentUser] = useState(null)
+
   return (
       <div>
         <UserContext.Provider value={{currentUser, setCurrentUser}}>

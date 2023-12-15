@@ -2,9 +2,11 @@ import User from "../Form/User";
 import {Link} from 'react-scroll'
 import {Link as RouterLink} from 'react-router-dom'
 import config from "../../config/index.js";
+import {useAuth} from "../../firestore.jsx";
 
 export default function Navbar() {
-  const userName = JSON.parse(localStorage.getItem("currentUser"))
+
+  const currentUser = useAuth()
 
   return (
       <nav>
@@ -33,7 +35,7 @@ export default function Navbar() {
         <div className={'d-flex'}>
           <Link style={{cursor: "pointer"}} to={"SearchBook"} smooth={true}>Find your books <span
               className={'text-2xl'}>👀 👈</span></Link>
-          {userName && <User/>}
+          {currentUser && <User/>}
         </div>
       </nav>
 

@@ -8,7 +8,7 @@ export default function User() {
         <img
           width={40}
           height={40}
-          src="https://cdn.vectorstock.com/i/1000x1000/79/06/cute-santa-with-a-christmas-present-flat-vector-39797906.webp"
+          src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.pngall.com%2Fwp-content%2Fuploads%2F5%2FUser-Profile-PNG-High-Quality-Image.png&f=1&nofb=1&ipt=5719264a783a0ecc1ff36f1a959fb31b62833cf41168f0b8a3e0f9a0849308c5&ipo=images"
           alt=""
         />
       </Link>

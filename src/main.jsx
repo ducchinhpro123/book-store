@@ -1,10 +1,9 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
 import "./index.css";
-import {CartProvider} from "./components/Cart/CartContext.jsx";
+import App from "./App.jsx";
 import {CardProductProvider} from "./components/Cart/CardProductProvider.jsx";
-import Register from "./components/Form/Register.jsx";
+import {CartProvider} from "./components/Cart/CartContext.jsx";
 // import {RouterProvider} from "react-router-dom";
 
 /* const router = createBrowserRouter([
@@ -26,6 +25,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
           <App/>
         </CardProductProvider>
       </CartProvider>
+     {/* <TestFirebase/>
+      <TestSignIn/>*/}
 
     </React.StrictMode>
 );

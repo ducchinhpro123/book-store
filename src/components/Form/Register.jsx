@@ -1,25 +1,21 @@
 import {useContext, useState} from "react";
 import {Link} from "react-router-dom";
 import config from "../../config/index.js";
-import axios from "axios";
-import {apiBaseUrl} from "../../config/apiBaseUrl.jsx";
+import {UserContext} from "../User/UserContext.jsx";
+import {signup} from "../../firestore.jsx";
 
 
 export default function Register() {
 
-  const [user, setUser] = useState({username: "", password: ""});
-  const [isRegistered, setIsRegistered] = useState(false)
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
   const [confirmPassword, setConfirmPassword] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
+  const {setCurrentUser} = useContext(UserContext)
+  const [loading, setLoading] = useState(false);
 
 
-  function handleUserChange(event) {
-    const {name, value} = event.target
-    setUser((prevUser) => ({...prevUser, [name]: value}))
-  }
-
-  function handleConfirmPasswordChange(event) {
-    setConfirmPassword(event.target.value)
-  }
+  const [isRegistered, setIsRegistered] = useState(false)
 
   const Button = () => (
       <div>
@@ -27,46 +23,46 @@ export default function Register() {
       </div>
   );
 
-  function handleSubmit(event) {
-    event.preventDefault()
-    if (user.username !== '' && user.password !== '' && user.password === confirmPassword) {
-      // localStorage.setItem('username', user.username)
-      // localStorage.setItem('password', user.password)
-      axios.post(`${apiBaseUrl}/users`, user).then(response => {
-        setIsRegistered(true)
-      }).catch(error => {
-        console.error("Error creating user: ", error)
-      })
-    } else if (user.password !== confirmPassword) {
-      alert("Passwords do not match.")
-    } else {
-      alert("Please fill in both fields")
-    }
+  const handleSignup = async (e) => {
+    e.preventDefault();
+    setLoading(true)
+    await signup(email, password)
+    setIsRegistered(true)
+    setLoading(false)
   }
 
   return (
       <div className="container col-4">
-        <form onSubmit={handleSubmit} className="mt-5 bg-white" style={{margin: '0 160px 0 160px', padding: '30px'}}>
+        <form onSubmit={handleSignup} className="mt-5 bg-white" style={{margin: '0 160px 0 160px', padding: '30px'}}>
           <h1 style={{fontSize: '24px', fontWeight: 'bold'}} className="mb-5">Register</h1>
           <div className="mb-3">
-            <label htmlFor="username" className="form-label">Username</label>
-            <input value={user.username} type="text" name={'username'} onChange={handleUserChange}
-                   className="form-control" id="username"/>
+            <label htmlFor="email" className="form-label">Your email</label>
+            <input value={email} type="text" name={'email'}
+                   onChange={(e) => setEmail(e.target.value)}
+                   className="form-control" id="email"/>
           </div>
 
           <div className="mb-3">
             <label htmlFor="password" className="form-label">Password</label>
-            <input value={user.password} type="password" name={'password'} onChange={handleUserChange}
+            <input value={password} type="password" name={'password'}
+                   onChange={(e) => setPassword(e.target.value)}
                    className="form-control" id="password"/>
           </div>
           <div className="mb-3">
             <label htmlFor="password" className="form-label">Confirm your password</label>
             <input value={confirmPassword} type="password" name={'confirmPassword'}
-                   onChange={handleConfirmPasswordChange}
+                   onChange={(e) => setConfirmPassword(e.target.value)}
                    className="form-control" id="confirmPassword"/>
           </div>
-          <button type={'submit'} style={{color: '#091579'}} className="btn btn-primary">Register</button>
+          <button type={'submit'} style={{color: '#091579'}}
+                  className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Register
+          </button>
+          {/*if user already have an account*/}
+          <p>Already have an account? {<Link className={'text-blue-600 underline hover:text-blue-900'}
+                                             to={config.routes.login}>Log in here.</Link>}</p>
           {isRegistered && <Button/>}
+          {errorMessage && <p className={'text-warning'}>{errorMessage}</p>}
+          {loading && <p className={'text-green-500'}>Please wait...</p>}
         </form>
       </div>
   )
