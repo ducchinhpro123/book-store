@@ -19,7 +19,7 @@ export default function ShopCategory() {
           >
             <div className="row">
               <div
-                  className="col-sm-7 col-xl-6 d-xl-flex flex-column justify-content-xl-center align-items-xl-start"
+                  className="col-6 col-sm-7 col-xl-6 d-xl-flex flex-column justify-content-xl-center align-items-xl-start"
                   style={{paddingLeft: 55}}
               >
                 <p className="font-monospace fw-semibold">SHOP CATEGORY</p>
@@ -51,7 +51,7 @@ export default function ShopCategory() {
                   </svg>
                 </p>
               </div>
-              <div className="col-sm-5 col-lg-8 col-xl-6 d-xl-flex justify-content-xl-center align-items-xl-center">
+              <div className="col-5 col-sm-5 col-lg-8 col-xl-6 d-xl-flex justify-content-xl-center align-items-xl-center">
                 <img
                     className="img-fluid"
                     src={`${process.env.PUBLIC_URL}/assets/img/e-books.png`}
@@ -75,7 +75,7 @@ export default function ShopCategory() {
           >
             <div className="row">
               <div
-                  className="col-sm-7 col-xl-6 d-xl-flex flex-column justify-content-xl-center align-items-xl-start"
+                  className="col-6 col-sm-7 col-xl-6 d-xl-flex flex-column justify-content-xl-center align-items-xl-start"
                   style={{paddingLeft: 55}}
               >
                 <p className="font-monospace fw-semibold">SHOP CATEGORY</p>
@@ -107,7 +107,7 @@ export default function ShopCategory() {
                   </svg>
                 </p>
               </div>
-              <div className="col-sm-5 col-xl-6 d-xl-flex align-items-xl-center">
+              <div className="col-5 col-sm-5 col-xl-6 d-xl-flex align-items-xl-center">
                 <img
                     className="img-fluid"
                     src={`${process.env.PUBLIC_URL}/assets/img/pngwing.com.png`}
@@ -127,7 +127,7 @@ export default function ShopCategory() {
           >
             <div className="row">
               <div
-                  className="col-sm-7 col-xl-6 d-xl-flex flex-column justify-content-xl-center align-items-xl-start"
+                  className="col-6 col-sm-7 col-xl-6 d-xl-flex flex-column justify-content-xl-center align-items-xl-start"
                   style={{paddingLeft: 55}}
               >
                 <p className="font-monospace fw-semibold">SHOP CATEGORY</p>
@@ -159,7 +159,7 @@ export default function ShopCategory() {
                   </svg>
                 </p>
               </div>
-              <div className="col-sm-5 col-xl-6 d-xl-flex align-items-xl-center">
+              <div className="col-5 col-sm-5 col-xl-6 d-xl-flex align-items-xl-center">
                 <img
                     className="img-fluid"
                     src={`${process.env.PUBLIC_URL}/assets/img/pngwing.com(1).png`}

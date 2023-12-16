@@ -17,7 +17,7 @@ export default function ExclusiveThisMonthShow({exclusiveBook, addToCart, detail
 
   return (
       <div className="d-flex flex-column flex-sm-row justify-content-center mt-3">
-        <div className="col-lg-2 col-md-4 col-sm-5 mx-sm-auto mx-lg-0">
+        <div className="col-lg-4 col-xl-2 col-md-4 col-sm-5 mx-sm-auto mx-lg-0">
           <img className=""
               loading="lazy"
               src={exclusiveBook.image}

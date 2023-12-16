@@ -23,24 +23,28 @@ export default function Login() {
   }
 
   return (
-      <div className="container col-4">
+      <>
+        <div className="col-11 p-3 col-lg-6 col-md-8 col-sm-10 bg-white mt-3 mx-auto">
+          <h1 className={'text-3xl text-center font-bold text-cyan-800'}>Login</h1>
 
-        <div className="mb-3">
-          <label htmlFor="email" className="form-label">Your Email</label>
-          <input type="text" name={'email'} ref={email}
-                 className="form-control" id="email"/>
+          <div className="mb-3">
+            <label htmlFor="email" className="form-label">Your Email</label>
+            <input type="text" name={'email'} ref={email}
+                   className="form-control" id="email"/>
+          </div>
+
+          <div className="mb-3">
+            <label htmlFor="password" className="form-label">Password</label>
+            <input type="password" name={'password'} ref={password}
+                   className="form-control" id="password"/>
+          </div>
+          <button onClick={handleLogin} className="btn btn-primary text-dark text-white">Submit</button>
+
+
+          {isLoading && <p className={'text-green-500'}>Please wait while we verify your credentials...</p>}
+          {errorMessage && <p className={'text-red-500'}>{errorMessage}</p>}
         </div>
+      </>
 
-        <div className="mb-3">
-          <label htmlFor="password" className="form-label">Password</label>
-          <input type="password" name={'password'} ref={password}
-                 className="form-control" id="password"/>
-        </div>
-        <button onClick={handleLogin} className="btn btn-primary text-dark">Submit</button>
-
-
-        {isLoading && <p className={'text-green-500'}>Please wait while we verify your credentials...</p>}
-        {errorMessage && <p className={'text-red-500'}>{errorMessage}</p>}
-      </div>
   )
 }

@@ -32,8 +32,8 @@ export default function Register() {
   }
 
   return (
-      <div className="container col-4">
-        <form onSubmit={handleSignup} className="mt-5 bg-white" style={{margin: '0 160px 0 160px', padding: '30px'}}>
+      <div className="row d-flex justify-content-center">
+        <form onSubmit={handleSignup} className="mt-5 bg-white p-3 col col-10 col-sm-7 col-lg-8" >
           <h1 style={{fontSize: '24px', fontWeight: 'bold'}} className="mb-5">Register</h1>
           <div className="mb-3">
             <label htmlFor="email" className="form-label">Your email</label>

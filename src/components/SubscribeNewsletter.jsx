@@ -1,3 +1,5 @@
+import * as url from "url";
+
 export default function SubscribeNewsletter() {
   return (
     <div className="container-fluid">
@@ -7,12 +9,11 @@ export default function SubscribeNewsletter() {
       >
         <div className="container-fluid"> 
           <div
-            className="text-white border rounded border-0 border-light d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5"
+            className="text-white border rounded  border-light d-flex flex-column justify-content-between align-items-center flex-lg-row p-4 p-lg-5"
             data-bs-theme="light"
             style={{
-              paddingTop: 0,
-              paddingBottom: 0,
-              background: "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,21,121,1) 35%, rgba(0,212,255,1) 100%)",
+              backgroundImage: "url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2Fwp2036914.jpg&f=1&nofb=1&ipt=c826eea699e8366216a490c808ccc27fcea9c15de2420a96c138e34035f7773d&ipo=images')"
+              // background: "radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,21,121,1) 35%, rgba(0,212,255,1) 100%)",
             }}
           >
             <div className="text-center text-lg-start py-3 py-lg-1">

@@ -42,13 +42,13 @@ function Cart() {
   // console.log(cartItems);
 
   return (
-      <div style={{padding: '0 160px 0 160px'}} className="container mt-5 ">
+      <div className="container mt-5">
         <div className="shopping-cart">
           <div className="px-4 px-lg-0">
             <div className="pb-5">
               <div className="container">
                 <div className="row">
-                  <div className="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+                  <div className="col-lg-12 mx-auto p-5 bg-white rounded shadow-sm mb-5">
                     <div className="table-responsive">
                       <table className="table">
                         <thead>
@@ -73,29 +73,29 @@ function Cart() {
                         {cartItems.map((cart, index) => {
                           return (
                               <tr key={index}>
-                                <th className="border-0" scope="row">
-                                  <div className="p-2 d-flex">
+                                <td className="border-0" scope="row">
+                                  <div className="p-2 row ">
                                     <img
-                                        className="img-fluid rounded shadow-sm"
+                                        className="img-fluid rounded shadow-sm col-10 col-md-5 col-lg-2 "
                                         src={cart.image}
                                         alt={cart.title}
                                         width="90"
                                     />
-                                    <div className="ml-3 d-inline-block align-middle">
+                                    <div className="ml-3 d-inline-block align-middle col col-10 col-lg-4">
                                       <h5 className="mb-0">
                                         <a
-                                            className="text-dark d-inline-block align-middle"
+                                            className="text-dark d-inline-block align-middle font-bold"
                                             href="#"
                                         >
                                           {cart.title}
                                         </a>
                                       </h5>
-                                      <span className="text-muted font-weight-normal font-italic d-block">
+                                      <span className="italic text-muted font-weight-normal font-italic d-block">
                                       {cart.subtitle ? (cart.subtitle) : 'Have no subtitle yet. ( ´･･)ﾉ(._.`)'}
                                     </span>
                                     </div>
                                   </div>
-                                </th>
+                                </td>
                                 <td className="border-0 align-middle">
 
                                   {cart.price === '$0.00' ? (<p className={'text-success fw-bold'}>Free</p>) : (

@@ -23,7 +23,7 @@ export default function ShowInterestingBook({book}) {
   }
 
   return (
-      <div className="flex font-sans bg-white rounded-xl bg-clip-border text-gray-700 shadow-md">
+      <div className="flex font-sans bg-white rounded-xl bg-clip-border text-gray-700 shadow-md m-2">
         <div className="flex-none w-50 p-2 relative">
           <img
               src={book.image}

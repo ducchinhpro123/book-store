@@ -64,7 +64,7 @@ export default function Body() {
           <Accordion/>
           <section
               className="d-xl-flex justify-content-xl-center"
-              style={{margin: "0px auto", transform: "translateY(-65px)",}}
+              style={{margin: "0px auto",}}
           >
             <div
                 className="row d-xl-flex justify-content-xl-center align-items-xl-center"
@@ -179,7 +179,7 @@ export default function Body() {
                   Text books
                 </button>
               </div>
-              <div className="row filtr-container d-flex justify-content-center">
+              <div className="row d-flex justify-content-center">
                 <InterestingBooks field={field}/>
               </div>
             </div>
@@ -216,7 +216,7 @@ export default function Body() {
                       paddingTop: 23,
                       fontWeight: "bold",
                       textAlign: "center",
-                      marginBottom:"50px"
+                      marginBottom: "50px"
                     }}
                 >
                   EXCLUSIVE THIS MONTH

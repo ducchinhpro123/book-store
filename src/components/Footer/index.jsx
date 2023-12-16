@@ -7,241 +7,67 @@ export default function Footer() {
 }
  */
 import SubscribeNewsletter from "../../components/SubscribeNewsletter"
+import {BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiMap, BiPhone} from "react-icons/bi";
+import {FaFacebook} from "react-icons/fa";
+import {GiMailbox} from "react-icons/gi";
+import {MdEmail} from "react-icons/md";
+
 export default function Footer() {
   return (
-    <div id={"Contact"}>
-      
-      <div className="container-fluit bg-white mt-5" >
-        <footer className="container">
-        <SubscribeNewsletter />
-          <div className="row " style={{padding:'0 160px 0 160px'}}>
-            <div className="col">
-              <div className="row">
-                <div className="col">
-                  <img
-                    className="d-lg-flex d-xl-flex justify-content-lg-start justify-content-xl-start align-items-xl-center"
-                    src="https://demo.joomlabuff.com/bookstore/images/logo/logo_footer.png"
-                    height="54"
-                    width="244"
-                  />
-                </div>
+      <div id={"Contact"}>
+
+        <div className="container-fluid bg-white mt-3">
+          <SubscribeNewsletter/>
+          <footer>
+            <div className="row">
+              <div className="col-sm-6 col-md-4 footer-navigation">
+                {/*<h3><a href="#">Company<span>logo </span></a></h3>*/}
+                <img src="https://demo.joomlabuff.com/bookstore/images/logo/logo_footer.png" alt=""
+                     style={{width: '120px', height: '120px'}}/>
+                <p className="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a
+                    href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a
+                    href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
+                <p className="company-name">Company Name © 2015 </p>
               </div>
-              <div className="row">
-                <div className="col d-md-flex align-items-md-center">
-                  <i
-                    className="bi bi-send-fill  d-md-flex align-items-md-center"
-                    style={{ fontSize: "38px", color:'#091579' }}
-                  ></i>
-                </div>
-                <div className="col-md-8 col-xl-9">
-                  <p className="d-md-flex justify-content-md-center">
-                    <br />
-                    <span style={{ color: "rgb(51, 51, 51)" }}>
-                      868 Bechole Road, Victory Lorem Ispuse, New York
-                    </span>
-                    <br />
-                    <br />
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col d-xl-flex align-items-xl-center">
-                  <i
-                    className="bi bi-telephone-fill "
-                    style={{ fontSize: "38px",color:'#091579'  }}
-                  ></i>
-                </div>
-                <div className="col-xl-9">
+              <div className="col-sm-6 col-md-4 footer-contacts">
+                <div>
+                  <BiMap className="fa fa-map-marker footer-contacts-icon"/>
                   <p>
-                    <br />
-                    <span style={{ color: "rgb(51, 51, 51)" }}>
-                      Phone: (+80) 123 456 Fax: (+80) 123 456 789
-                    </span>
-                    <br />
-                    <br />
+                    <span className="new-line-span">21 Revolution Street</span>
+                    Paris, France
                   </p>
+                </div>
+                <div>
+                  <BiPhone className="fa fa-map-marker footer-contacts-icon"/>
+                  <p className="footer-center-info email text-start"> +1 555 123456</p>
+                </div>
+                <div>
+                  <MdEmail className="fa fa-map-marker footer-contacts-icon"/>
+                  <p><a href="#" target="_blank">support@company.com</a></p>
                 </div>
               </div>
-              <div className="row">
-                <div className="col d-xl-flex align-items-xl-center">
-                  <i
-                    className="bi bi-envelope-arrow-up-fill  "
-                    style={{ fontSize: "38px",color:'#091579' }}
-                  ></i>
-                </div>
-                <div className="col-xl-9">
-                  <p>
-                    <br />
-                    <span style={{ color: "rgb(51, 51, 51)" }}>
-                      Email: Contact@bookstore.com Website: www.Bookstore.com
-                    </span>
-                    <br />
-                    <br />
-                  </p>
+              <div className="col-md-4 footer-about">
+                <h4>About the company</h4>
+                <p> Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor
+                  lacus vehicula sit amet. </p>
+                <div className="social-links social-icons">
+                  <a href="#">
+                    <BiLogoGithub className={'w-8 h-8'}/>
+                  </a>
+                  <a href="#">
+                    <BiLogoTwitter className={'w-8 h-8'}/>
+                  </a>
+                  <a href="#">
+                    <BiLogoLinkedin className={'w-8 h-8'}/>
+                  </a>
+                  <a href="#">
+                    <FaFacebook className={'w-8 h-8'}/>
+                  </a>
                 </div>
               </div>
             </div>
-            <div className="col-xl-2">
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <br />
-                    <strong>
-                      <span style={{ color: "rgb(51, 51, 51)" }}>
-                        SHOPPING GUIDE
-                      </span>
-                    </strong>
-                    <br />
-                    <br />
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-xl-12">
-                  <p>How to buy</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(51, 51, 51)" }}>Faq&#39;s</span>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(51, 51, 51)" }}>
-                      Where is my order
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(51, 51, 51)" }}>
-                      Return pocily
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(39, 174, 97)" }}>Payman</span>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(51, 51, 51)" }}>Shipment</span>
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col">
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <br />
-                    <strong>
-                      <span style={{ color: "rgb(51, 51, 51)" }}>
-                        INFORMATION
-                      </span>
-                    </strong>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(51, 51, 51)" }}>About us</span>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>Delivery information</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>Privacy policy</p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(51, 51, 51)" }}>Discout</span>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <span style={{ color: "rgb(51, 51, 51)" }}>Customs</span>
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <p>ServiceTerms &amp; condition</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-3">
-              <div className="row">
-                <div className="col">
-                  <p>
-                    <br />
-                    <strong>
-                      <span style={{ color: "rgb(51, 51, 51)" }}>
-                        FIND YOUR LOCAL STORE
-                      </span>
-                    </strong>
-                    <br />
-                    <br />
-                  </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col">
-                  <img
-                    src="https://demo.joomlabuff.com/bookstore/images/map/worldmap.png"
-                    width="260"
-                    height="161"
-                  />
-                </div>
-              </div>
-              <div className="row">
-                <div
-                  className="col d-xl-flex justify-content-xl-center"
-                  style={{ marginTop: " 22px", marginRight: "30px",color:'#091579' }}
-                >
-                  <i
-                    className="bi bi-facebook  d-md-flex align-items-md-center"
-                    style={{ fontSize: "38px", marginRight: "30px",color:'#091579' }}
-                  ></i>
-                  <i
-                    className="bi bi-instagram  d-md-flex align-items-md-center"
-                    style={{ fontSize: "38px", marginRight: "30px",color:'#091579' }}
-                  ></i>
-                  <i
-                    className="bi bi-twitter  d-md-flex align-items-md-center"
-                    style={{ fontSize: "38px", marginRight: "30px",color:'#091579' }}
-                  ></i>
-                  <i
-                    className="bi bi-google  d-md-flex align-items-md-center"
-                    style={{ fontSize: "38px", marginRight: "30px",color:'#091579'}}
-                  ></i>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </div>
-    </div>
   );
 }

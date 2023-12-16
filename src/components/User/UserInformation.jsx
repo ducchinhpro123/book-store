@@ -22,7 +22,7 @@ export default function UserInformation() {
     if (currentUser && currentUser.photoURL) {
       setImageUrl(currentUser.photoURL)
     }
-  }, [currentUser]);
+  }, [currentUser, handleClick]);
 
   return (
       <div className="container-fluid">

@@ -9,9 +9,9 @@ export default function BookList({books}) {
   const {setProduct} = useContext(CardProductContext);
 
   return (
-      <div className="row">
+      <div className="row  flex justify-center">
         {books.map((book) => (
-            <div className="col-7 mx-auto col-sm-6 col-md-6 col-lg-4 col-xl-3" key={book.isbn13}>
+            <div className="col-7 col-sm-6 col-md-6 col-lg-4 col-xl-3" key={book.isbn13}>
               <BookShow book={book} addToCart={addToCart} setProduct={setProduct}/>
             </div>
         ))}

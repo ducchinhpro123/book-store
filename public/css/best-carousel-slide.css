@@ -1,0 +1,69 @@
+div.jumbotron.carousel-hero {
+    color: #fff;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+}
+
+div.jumbotron.hero-nature {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmiro.medium.com%2Fmax%2F10944%2F1*S81O15rjKfG-BFdnNC6-GQ.jpeg&f=1&nofb=1&ipt=758141c4b011e5ee50b4c5ddbd20d014784ce75d7de2a2a360b1255fb6f29d58&ipo=images');
+}
+
+div.jumbotron.hero-photography {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.zastavki.com%2Fpictures%2Foriginals%2F2014%2FCreative_Wallpaper_Stack_of_books_on_the_bench_082401_.jpg&f=1&nofb=1&ipt=1ba926d12f993885340daf399a9c27eee8426b939464edc7a93ffe93fd785bac&ipo=images');
+}
+
+div.jumbotron.hero-technology {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.l0PQ97Jq6F1NbCvTmuMqWQHaE7%26pid%3DApi&f=1&ipt=552267803ea8462250423380392d0e992a55da6d7ac7a2f89a2c2b3a06946016&ipo=images');
+}
+
+h1.hero-title, h2.hero-title, h3.hero-title {
+    text-shadow: 0 3px 3px rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+p.hero-subtitle {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.plat {
+    border-radius: 0px;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 0 #048f83!important;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #016090;
+    border-color: #016090;
+}
+
+.btn.btn-primary {
+    background-color: #048f83!important;
+    border-color: #048f83!important;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    box-shadow: 0 0 0 .2rem rgba(0,123,255,.5);
+}
+
+* {
+    /*box-sizing: inherit;*/
+}
+
+*:before, *:after {
+    /*box-sizing: inherit;*/
+}
+
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}

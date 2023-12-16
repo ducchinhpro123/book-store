@@ -13,16 +13,16 @@ export default function BookShow({book, addToCart, setProduct}) {
   // console.log(book)
 
   return (
-      <div className=" relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-11">
+      <div className="relative flex w-80 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-11 mx-sm-auto">
         <div
-            className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-gradient-to-r from-blue-500 to-blue-600">
+            className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl text-white shadow-lg shadow-blue-gray-500/40 bg-blue-500 backdrop-blur-xl">
           <Link to={`${config.routes.learnmore}/${book.isbn13}`}
                 onClick={() => {
                   setProduct(book);
                 }}>
             <img
-                className="mx-auto relative "
-                style={{width: "135px", height: "184px"}}
+                className="mx-auto -mt-4"
+                style={{width: "165px", height: "190px"}}
                 src={book.image}
                 alt={book.title}
             />
@@ -34,7 +34,7 @@ export default function BookShow({book, addToCart, setProduct}) {
             {book.title}
           </p>
           <p className="block font-sans text-base font-light leading-relaxed text-inherit antialiased book-subtitle">
-            {book.subtitle}
+            {book.subtitle?book.subtitle:<p className={'italic'}>have no subtitle yet.</p>}
           </p>
         </div>
         <div className=" ml-6 text-lg font-semibold text-slate-500">

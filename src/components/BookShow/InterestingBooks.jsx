@@ -8,7 +8,7 @@ export default function InterestingBooks({ field }) {
     <>
       {books[field].map((book) => {
         return (
-          <div key={book.isbn13} className="col-13 col-sm-11 col-md-6 col-lg-6 col-xl-3 d-flex filtr-item">
+          <div key={book.isbn13} className="col-12 col-sm-11 col-md-6 col-lg-6 col-xl-4 d-flex">
             <ShowInterestingBook book={book} />
           </div>
         );
