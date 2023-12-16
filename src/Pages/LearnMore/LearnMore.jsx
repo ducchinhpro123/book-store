@@ -31,7 +31,7 @@ function LearnMore() {
             <i className="bi bi-x-square"></i>
           </div>
         </div>
-        <div className=" border border-2 mt-5 p-4 rounded bg-white">
+        <div className="border-2 mt-5 p-4 rounded bg-white">
           <div className="row">
             <div className="col">
               <div className="row ">
