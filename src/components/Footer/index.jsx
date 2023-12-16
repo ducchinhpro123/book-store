@@ -9,7 +9,6 @@ export default function Footer() {
 import SubscribeNewsletter from "../../components/SubscribeNewsletter"
 import {BiLogoGithub, BiLogoLinkedin, BiLogoTwitter, BiMap, BiPhone} from "react-icons/bi";
 import {FaFacebook} from "react-icons/fa";
-import {GiMailbox} from "react-icons/gi";
 import {MdEmail} from "react-icons/md";
 
 export default function Footer() {
@@ -21,13 +20,13 @@ export default function Footer() {
           <footer>
             <div className="row">
               <div className="col-sm-6 col-md-4 footer-navigation">
-                {/*<h3><a href="#">Company<span>logo </span></a></h3>*/}
-                <img src="https://demo.joomlabuff.com/bookstore/images/logo/logo_footer.png" alt=""
-                     style={{width: '120px', height: '120px'}}/>
+                <h3><a href="#">Book<span> Store</span></a></h3>
+                {/*<img src="https://demo.joomlabuff.com/bookstore/images/logo/logo_footer.png" alt=""
+                     style={{width: '120px', height: '120px'}}/>*/}
                 <p className="links"><a href="#">Home</a><strong> · </strong><a href="#">Blog</a><strong> · </strong><a
                     href="#">Pricing</a><strong> · </strong><a href="#">About</a><strong> · </strong><a
                     href="#">Faq</a><strong> · </strong><a href="#">Contact</a></p>
-                <p className="company-name">Company Name © 2015 </p>
+                <p className="company-name">Book Store © 2023 </p>
               </div>
               <div className="col-sm-6 col-md-4 footer-contacts">
                 <div>

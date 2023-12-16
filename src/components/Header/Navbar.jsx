@@ -38,7 +38,5 @@ export default function Navbar() {
           {currentUser && <User/>}
         </div>
       </nav>
-
-
   );
 }
