@@ -14,7 +14,7 @@ function LearnMore() {
 
   return (
       <div className={'col-10 mx-auto'}>
-        <div className="noti" style={{transform: `translate(${notitran},0)`}}>
+        <div className="noti" style={{transform: `translate(${notitran},0)`, zIndex: 3}}>
           <div className="toast__icon">
             <i className="bi bi-bag-check"></i>
           </div>
